@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Bienvenido 2025!</title>
+    <style>
+        /* Fondo animado con destellos */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-align: center;
+            background: linear-gradient(135deg, #0d47a1, #42a5f5);
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .stars {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 
+                100px 200px #fff, 
+                200px 300px #fff, 
+                300px 400px #fff, 
+                400px 500px #fff, 
+                500px 600px #fff;
+            animation: twinkle 2s infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; }
+        }
+
+        h1 {
+            font-size: 5em;
+            margin-top: 20%;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .year {
+            font-size: 8em;
+            font-weight: bold;
+            color: #ffd700;
+            text-shadow: 3px 3px 10px #000;
+            animation: glow 1s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px #ffd700, 0 0 20px #ffecb3; }
+            100% { text-shadow: 0 0 20px #ffea00, 0 0 30px #fff176; }
+        }
+
+        .message {
+            font-size: 2em;
+            margin-top: 20px;
+            animation: fadeIn 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <h1>¡Bienvenido a</h1>
+    <div class="year">2025</div>
+    <p class="message">Que este año esté lleno de éxito, amor y felicidad. 🌟</p>
+    <footer>Creado con ❤️ para celebrar el nuevo año.</footer>
+</body>
+</html>
